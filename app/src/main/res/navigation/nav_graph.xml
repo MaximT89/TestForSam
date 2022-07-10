@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.max.secondworld.projectforsam.ui.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_workFragment"
+            app:destination="@id/workFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/workFragment"
+        android:name="com.max.secondworld.projectforsam.ui.work.WorkFragment"
+        android:label="fragment_work"
+        tools:layout="@layout/fragment_work" />
+</navigation>
